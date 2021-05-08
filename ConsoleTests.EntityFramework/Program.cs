@@ -1,4 +1,5 @@
 ﻿using System;
+using ConsoleTests.EntityFramework.Models;
 
 namespace ConsoleTests.EntityFramework
 {
@@ -6,7 +7,25 @@ namespace ConsoleTests.EntityFramework
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            FridgeContext context = new FridgeContext();
+
+            var salt = new Ingredient
+            {
+                Name = "Salt",
+                Description = "Salty lead of the four flavors of the Alickmylips"
+            };
+
+            context.Ingredients.Add(salt);
+            
+            var pepper = new Ingredient
+            {
+                Name = "Pepper",
+                Description = "Spicy."
+            };
+
+            context.Add(pepper);
+
+            context.SaveChanges();
         }
     }
 }
