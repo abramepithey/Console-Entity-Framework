@@ -8,9 +8,9 @@ namespace ConsoleTests.CalculatorTests
     {
         private readonly Operations _operations;
 
-        public CalculatorTesting(Operations operations)
+        public CalculatorTesting()
         {
-            this._operations = operations;
+            this._operations = new Operations();
         }
         
         [Theory]
