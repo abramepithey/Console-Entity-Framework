@@ -1,3 +1,5 @@
+using System;
+
 namespace ConsoleTests.CalculatorTDD
 {
     public class Operations
@@ -11,7 +13,7 @@ namespace ConsoleTests.CalculatorTDD
         public decimal Division(decimal firstNumber, decimal secondNumber)
         {
             var quotient = firstNumber / secondNumber;
-            return quotient;
+            return Math.Round(quotient, 3);
         }
     }
 }
