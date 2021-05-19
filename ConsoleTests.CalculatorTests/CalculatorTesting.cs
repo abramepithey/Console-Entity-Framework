@@ -20,7 +20,7 @@ namespace ConsoleTests.CalculatorTests
         [InlineData(58, 31, 89)]
         [InlineData(155, 12, 167)]
         [InlineData(64, 123, 187)]
-        public void AddNumbers_ReturnsCorrectSum(decimal firstNumber, decimal secondNumber, decimal sumNumber)
+        public void Sum_ReturnsCorrectSum(decimal firstNumber, decimal secondNumber, decimal sumNumber)
         {
             var assertion = _operations.Sum(firstNumber, secondNumber);
             Assert.Equal(sumNumber, assertion);
