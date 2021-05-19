@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTests.EntityFramewor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTests.CalculatorTDD", "ConsoleTests.CalculatorTDD\ConsoleTests.CalculatorTDD.csproj", "{F89468E1-6499-4D3B-B2E3-FD024902AEE7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTests.CalculatorTests", "ConsoleTests.CalculatorTests\ConsoleTests.CalculatorTests.csproj", "{A598424F-AA2C-4CD2-8899-70009A5D74B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{F89468E1-6499-4D3B-B2E3-FD024902AEE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F89468E1-6499-4D3B-B2E3-FD024902AEE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F89468E1-6499-4D3B-B2E3-FD024902AEE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A598424F-AA2C-4CD2-8899-70009A5D74B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A598424F-AA2C-4CD2-8899-70009A5D74B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A598424F-AA2C-4CD2-8899-70009A5D74B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A598424F-AA2C-4CD2-8899-70009A5D74B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
