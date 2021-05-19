@@ -38,5 +38,16 @@ namespace ConsoleTests.CalculatorTests
             var assertion = _operations.Sum(firstNumber, secondNumber);
             Assert.Equal(sumNumber, assertion);
         }
+        
+        [Theory]
+        [InlineData(1, 1.3, 2.3)]
+        [InlineData(4.2, 45.89, 50.09)]
+        [InlineData(-13.8, 34.123, 20.323)]
+        [InlineData(0.00001, 0.00009, 0.0001)]
+        public void Sum_UsingDecimals_ReturnsCorrectSum(decimal firstNumber, decimal secondNumber, decimal sumNumber)
+        {
+            var assertion = _operations.Sum(firstNumber, secondNumber);
+            Assert.Equal(sumNumber, assertion);
+        }
     }
 }
