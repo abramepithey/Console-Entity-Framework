@@ -1,10 +1,18 @@
 using System;
+using ConsoleTests.CalculatorTDD;
 using Xunit;
 
 namespace ConsoleTests.CalculatorTests
 {
     public class CalculatorTesting
     {
+        private readonly Operations _operations;
+
+        public CalculatorTesting(Operations operations)
+        {
+            this._operations = operations;
+        }
+        
         [Theory]
         [InlineData(1, 2, 3)]
         [InlineData(33, 42, 75)]
@@ -14,7 +22,7 @@ namespace ConsoleTests.CalculatorTests
         [InlineData(64, 123, 187)]
         public void AddNumbers_ReturnsCorrectSum(decimal firstNumber, decimal secondNumber, decimal sumNumber)
         {
-            var assertion = CalculatorTDD.Sum(firstNumber, secondNumber);
+            var assertion = _operations.Sum(firstNumber, secondNumber);
             Assert.Equal(sumNumber, assertion);
         }
     }
