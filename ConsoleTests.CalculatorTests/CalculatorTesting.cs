@@ -61,5 +61,11 @@ namespace ConsoleTests.CalculatorTests
             var assertion = _operations.Division(firstNumber, secondNumber);
             Assert.Equal(quotientNumber, assertion);
         }
+
+        [Fact]
+        public void Division_ByZero_ThrowsException()
+        {
+            Assert.Throws<DivideByZeroException>(() => _operations.Division(4, 0));
+        }
     }
 }
