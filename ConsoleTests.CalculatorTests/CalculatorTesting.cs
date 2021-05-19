@@ -3,7 +3,7 @@ using Xunit;
 
 namespace ConsoleTests.CalculatorTests
 {
-    public class UnitTest1
+    public class CalculatorTesting
     {
         [Fact]
         public void Test1()
