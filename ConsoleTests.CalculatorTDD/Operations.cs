@@ -7,5 +7,11 @@ namespace ConsoleTests.CalculatorTDD
             var sum = firstNumber + secondNumber;
             return sum;
         }
+
+        public decimal Division(decimal firstNumber, decimal secondNumber)
+        {
+            var quotient = firstNumber / secondNumber;
+            return quotient;
+        }
     }
 }
