@@ -1,4 +1,5 @@
 using System;
+using System.Runtime.InteropServices;
 using ConsoleTests.CalculatorTDD;
 using Xunit;
 
@@ -48,6 +49,17 @@ namespace ConsoleTests.CalculatorTests
         {
             var assertion = _operations.Sum(firstNumber, secondNumber);
             Assert.Equal(sumNumber, assertion);
+        }
+
+        [Theory]
+        [InlineData(8, 2, 4)]
+        [InlineData(99, 3, 33)]
+        [InlineData(-21, 7, -3)]
+        [InlineData(5.2456, 2.54, 2.064)]
+        public void Division_ReturnsCorrectQuotient(decimal firstNumber, decimal secondNumber, decimal quotientNumber)
+        {
+            var assertion = 0;
+            Assert.Equal(quotientNumber, assertion);
         }
     }
 }
