@@ -58,7 +58,7 @@ namespace ConsoleTests.CalculatorTests
         [InlineData(5.2456, 2.54, 2.064)]
         public void Division_ReturnsCorrectQuotient(decimal firstNumber, decimal secondNumber, decimal quotientNumber)
         {
-            var assertion = 0;
+            var assertion = _operations.Division(firstNumber, secondNumber);
             Assert.Equal(quotientNumber, assertion);
         }
     }
